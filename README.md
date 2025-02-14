@@ -1,4 +1,4 @@
-# HackTheGrind: My Ethical Hacking Journey
+# CTF-Journal: My Ethical Hacking Journey
 
 Welcome to my personal **CTF-Journal**! This repository serves as my learning log, where I document my journey into the world of ethical hacking, CTF (Capture the Flag) challenges, and cybersecurity. My goal is to track my progress, reflect on my learning, and build a resource that helps me improve while also providing a potential guide for others.
 
