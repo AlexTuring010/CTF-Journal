@@ -61,7 +61,3 @@ This section contains scripts and tools I’ve developed to assist with solving 
 ## How to Contribute
 
 Feel free to fork this repository and contribute! Whether it’s by sharing tips, submitting CTF challenges you’ve solved, or suggesting resources, all contributions are welcome.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
