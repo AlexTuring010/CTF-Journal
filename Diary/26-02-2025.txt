@@ -1,0 +1,11 @@
+oday, I began studying.
+
+I watched the first two lectures of the security course from university. Unfortunately, I couldn’t dedicate much more time to it since I have six other
+classes I’ve fallen slightly behind in. My plan is to catch up on everything and focus more on cybersecurity whenever I have leftover time.
+
+Alongside my security class, I’m also taking three other courses that I believe will be valuable for cybersecurity: Compilers, Cryptography, and System Programming. 
+Additionally, I have Artificial Intelligence 2, Communication Systems, and technologies for web apps, making this a packed semester.
+
+Right now, my main goal is to prepare for the AI vs Humans CTF challenge on February 14th—just 18 days away. Realistically, I don’t expect to perform exceptionally well, 
+but I want to capture at least one flag. After that, I plan to participate in more CTF challenges and hackathons to sharpen my web and mobile development skills. Hopefully, 
+by next year, I’ll be ready to secure an internship at a company and finally graduate.
