@@ -29,11 +29,10 @@ You can install Docker on Windows, macOS, or Linux. Follow the instructions on t
 ### Example: Running a Web Application
 
 1. Pull a base image:
+
    ```bash
    docker pull node:14
    ```
-
-````
 
 2. Create a simple `Dockerfile` for a Node.js app:
 
@@ -62,4 +61,7 @@ The application will now be accessible on `http://localhost:3000`.
 
 - [Official Docker Documentation](https://docs.docker.com/)
 - [Docker for Beginners - YouTube](https://youtu.be/eGz9DS-aIeY?si=KRdMiikF5WG53Sza)
-````
+
+```
+
+```
