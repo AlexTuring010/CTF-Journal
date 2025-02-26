@@ -51,3 +51,55 @@ This will copy the `output.txt` file from `/home/ubuntu/` inside the container t
 
 - Make sure the file path inside the container (`/home/ubuntu/output.txt`) is correct.
 - The `docker cp` command works with both running and stopped containers.
+
+## **Troubleshooting: Permission Denied**
+
+### **Problem:**
+
+After running `docker cp`, you may see a message like this:
+
+```bash
+Successfully copied 512B to /home/alexturing/test/compress.c
+open /home/alexturing/test/compress.c: permission denied
+```
+
+And when you check the directory, the file **does not appear**.
+
+### **Cause:**
+
+This happens when **the destination directory has restricted permissions**, preventing Docker from copying the file.
+
+### **Solution:**
+
+1. **Check the directory permissions:**
+
+   ```bash
+   ls -ld /home/alexturing/test/
+   ```
+
+   Example output:
+
+   ```
+   drwxrwxr-x 2 root root 4096 Feb 26 07:00 /home/alexturing/test/
+   ```
+
+   This means **only the owner and group have write access, but not others**.
+
+2. **Grant write permissions to everyone (if safe to do so):**
+
+   ```bash
+   sudo chmod 777 /home/alexturing/test/
+   ```
+
+3. **Try copying again:**
+
+   ```bash
+   docker cp d4e2f1a2b3c4:/home/ubuntu/compress42.c /home/alexturing/test/
+   ```
+
+4. **Verify the file is copied successfully:**
+   ```bash
+   ls -l /home/alexturing/test/
+   ```
+
+By adjusting permissions, you ensure that `docker cp` can successfully place files in the target directory.
