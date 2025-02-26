@@ -61,7 +61,3 @@ The application will now be accessible on `http://localhost:3000`.
 
 - [Official Docker Documentation](https://docs.docker.com/)
 - [Docker for Beginners - YouTube](https://youtu.be/eGz9DS-aIeY?si=KRdMiikF5WG53Sza)
-
-```
-
-```
