@@ -4,6 +4,8 @@
 
 void thank_you()
 {
+    printf("Congratulations you are now root!");
+    fflush(stdout); // Ensure the message is printed before execl
     execl("/bin/sh", "sh", NULL);
 }
 
