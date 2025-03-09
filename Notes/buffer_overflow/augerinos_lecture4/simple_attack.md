@@ -129,7 +129,7 @@
 
 ### Απενεργοποίηση Stack Canaries
 
-Επαναμεταγλωττίστε το ευάλωτο πρόγραμμα χωρίς προστασία στοίβας. Αν έχετε τον πηγαίο κώδικα, χρησιμοποιήστε την επιλογή `-fno-stack-protector` με το `gcc`:
+Επαναμεταγλώττίσε το ευάλωτο πρόγραμμα χωρίς προστασία στοίβας. Αν έχεις τον πηγαίο κώδικα, χρησιμοποίησε την επιλογή `-fno-stack-protector` με το `gcc`:
 
 ```sh
 gcc -fno-stack-protector -o vulnerable_program source_code.c
@@ -143,7 +143,7 @@ gcc -fno-stack-protector -o vulnerable_program source_code.c
 echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 ```
 
-Για να επανενεργοποιήσετε το ASLR μετά την ολοκλήρωση, εκτελέστε:
+Για να επανενεργοποιήσεις το ASLR μετά την ολοκλήρωση, εκτέλεσε:
 
 ```sh
 echo 2 | sudo tee /proc/sys/kernel/randomize_va_space
